@@ -15,8 +15,8 @@ ssh-keygen -t rsa -C "zy@400******28.com" -f ~/.ssh/id_rsa
 
 ## add private key
 ```
-ssh-add ~/.ssh/id_rsa $ ssh-add ~/.ssh/id_rsa
-ssh-add ~/.ssh/id_rsa $ ssh-add ~/.ssh/id_rsa_git
+$ ssh-add ~/.ssh/id_rsa
+$ ssh-add ~/.ssh/id_rsa_git
 ```
 list private key
 ```
