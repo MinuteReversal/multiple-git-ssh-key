@@ -81,3 +81,13 @@ sha 256
 ```
 ssh-keygen -E md5 -lf ./id_rsa
 ```
+
+## Unable to negotiate with xx.xx.xx.xx port 22: no matching key exchange method found.
+
+Their offer:diffie-hellman-group1-sha1
+
+add follow setting in ~/.ssh config file
+```
+Host xxx.xxx.xxx.xxx
+   KexAlgorithms +diffie-hellman-group1-sha1
+```
