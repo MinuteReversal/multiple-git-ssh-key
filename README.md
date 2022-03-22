@@ -56,6 +56,9 @@ Host git.400*****28.com
   User zy
   PreferredAuthentications publickey
   IdentityFile ~/.ssh/id_rsa
+  KexAlgorithms +diffie-hellman-group1-sha1
+  HostKeyAlgorithms ssh-rsa
+  PubkeyAcceptedKeyTypes ssh-rsa
 ```
 
 ## test
