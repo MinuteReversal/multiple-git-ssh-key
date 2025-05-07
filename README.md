@@ -94,3 +94,12 @@ add follow setting in ~/.ssh config file
 Host xxx.xxx.xxx.xxx
    KexAlgorithms +diffie-hellman-group1-sha1
 ```
+## Use user1's SSH key for pushing
+```ssh
+GIT_SSH_COMMAND="ssh -i ~/.ssh/id_rsa_user1" git push origin main
+```
+
+## Use user2's SSH key for pushing
+```ssh
+GIT_SSH_COMMAND="ssh -i ~/.ssh/id_rsa_user2" git push origin main
+```
